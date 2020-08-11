@@ -1,0 +1,1264 @@
+#odysseus {
+  /*------------------element ui select css ends---------------*/
+  /*------------------simple select css starts---------------*/
+  /*------------------simple select css ends---------------*/
+  /*---------vuetify css starts----------*/
+  /*---------vuetify css ends----------*/
+}
+
+#odysseus #OVExploreContainer .vue_multiselect .od-form-wrapper .od-input-wrapper input.od-input-box {
+  color: var(--text-color);
+  background: transparent;
+  border-color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .vue_multiselect .od-form-wrapper ::placeholder, #odysseus #OVExploreContainer .vue_multiselect .od-form-wrapper :-ms-input-placeholder, #odysseus #OVExploreContainer .vue_multiselect .od-form-wrapper ::-ms-input-placeholder {
+  color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__tag {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__tag-icon {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__tag-icon:after {
+  color: #fff;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__select {
+  z-index: 10;
+  background: transparent;
+}
+
+[dir='rtl'] #odysseus #OVExploreContainer .od-form-wrapper .multiselect__select {
+  right: auto;
+  left: 1px;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__select:before {
+  top: calc(50% + 4px);
+  border-color: var(--text-color) transparent transparent;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__element {
+  background: var(--primary-color);
+  color: var(--text-color);
+  padding: 0px;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect, #odysseus #OVExploreContainer .od-form-wrapper .multiselect__single {
+  cursor: pointer;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect.multiselect--active, #odysseus #OVExploreContainer .od-form-wrapper .multiselect__single.multiselect--active {
+  z-index: 51;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect--disabled {
+  background: transparent;
+  opacity: 1;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect--disabled .multiselect__select:before {
+  display: none;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__tags {
+  position: relative;
+  padding-left: 35px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  background: transparent;
+  color: var(--text-color);
+  border: 1px solid;
+  border-color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+
+[dir='rtl'] #odysseus #OVExploreContainer .od-form-wrapper .multiselect__tags {
+  padding-right: 35px;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__tags .multiselect__tag {
+  margin-bottom: 5px;
+  background-color: var(--secondary-color);
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__tags .multiselect__spinner {
+  background: transparent;
+  right: -2px;
+  top: -1px;
+}
+
+[dir='rtl'] #odysseus #OVExploreContainer .od-form-wrapper .multiselect__tags .multiselect__spinner {
+  right: auto;
+  left: -1px;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__tags .multiselect__placeholder {
+  color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__tags .multiselect__single .multiselect__tag-icon:after {
+  color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__tags .multiselect__single .multiselect__tag-icon:hover {
+  background-color: transparent;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .od-dropdown-without-icon .multiselect__tags {
+  padding-left: 10px;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__input {
+  padding: 0 0 0 0px;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__option {
+  font-size: 12px;
+  z-index: 15;
+  padding: 12px 24px;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__option.multiselect__option--group {
+  padding: 12px;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect.od-multiselect.multiselect--active {
+  z-index: 50;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__content-wrapper {
+  z-index: 50;
+}
+
+[dir='rtl'] #odysseus #OVExploreContainer .od-form-wrapper .multiselect__content-wrapper {
+  top: 40px;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__input, #odysseus #OVExploreContainer .od-form-wrapper .multiselect__single {
+  background: transparent;
+  border: 0px;
+  height: auto;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__single, #odysseus #OVExploreContainer .od-form-wrapper input::placeholder, #odysseus #OVExploreContainer .od-form-wrapper input {
+  color: var(--text-color);
+  opacity: 1;
+  font-size: 12px;
+}
+
+@media all and (max-width: 991px) {
+  #odysseus #OVExploreContainer .od-form-wrapper .multiselect__single, #odysseus #OVExploreContainer .od-form-wrapper input::placeholder, #odysseus #OVExploreContainer .od-form-wrapper input {
+    font-size: 12px;
+  }
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper input::-webkit-input-placeholder {
+  color: var(--text-color);
+  opacity: 1;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper input::-moz-placeholder {
+  color: var(--text-color);
+  opacity: 1;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper input:-ms-input-placeholder {
+  color: var(--text-color);
+  opacity: 1;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper input:-moz-placeholder {
+  color: var(--text-color);
+  opacity: 1;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__single {
+  padding-left: 0px;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__spinner:after, #odysseus #OVExploreContainer .od-form-wrapper .multiselect__spinner:before {
+  border-color: var(--secondary-color) transparent transparent;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__option--highlight, #odysseus #OVExploreContainer .od-form-wrapper .multiselect__option--selected.multiselect__option--highlight {
+  background: var(--secondary-color);
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__option--highlight:after, #odysseus #OVExploreContainer .od-form-wrapper .multiselect__option--selected.multiselect__option--highlight:after {
+  background: var(--primary-color);
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__tag-icon:focus, #odysseus #OVExploreContainer .od-form-wrapper .multiselect__tag-icon:hover {
+  background: var(--secondary-color);
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect--disabled .multiselect__current, #odysseus #OVExploreContainer .od-form-wrapper .multiselect--disabled .multiselect__select, #odysseus #OVExploreContainer .od-form-wrapper .multiselect__option--disabled:not(.multiselect__option--group) {
+  background: transparent;
+  color: var(--text-color);
+  opacity: 0.5;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__option--disabled:not(.multiselect__option--group) {
+  padding-bottom: 0px;
+  min-height: 20px;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__option--disabled:not(.multiselect__option--group) span {
+  border-top: 1px solid;
+  width: 100%;
+  height: 1px;
+  display: block;
+  text-indent: -9999px;
+  border-color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__content-wrapper {
+  -webkit-box-shadow: -1px 2px 5px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: -1px 2px 5px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: -1px 2px 5px 3px rgba(0, 0, 0, 0.25);
+  transition: all 375ms ease-in-out;
+  border-color: var(--secondary-color);
+}
+
+#odysseus #OVExploreContainer .cruiseform:not(.keen_ui) .od-form-wrapper .ui-datepicker__display {
+  height: auto;
+  border-bottom: 0px;
+}
+
+#odysseus #OVExploreContainer .cruiseform:not(.keen_ui) .od-form-wrapper .ui-datepicker {
+  margin-bottom: 0px;
+}
+
+#odysseus #OVExploreContainer .cruiseform:not(.keen_ui) .od-form-wrapper .ui-datepicker__display-value {
+  padding: 12px 0px 10px 35px;
+  color: var(--text-color);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+#odysseus #OVExploreContainer .cruiseform:not(.keen_ui) .od-form-wrapper .od-date-picker span.date-picker-close-btn {
+  background-color: var(--primary-color);
+  right: 10px;
+  top: 0px;
+}
+
+#odysseus #OVExploreContainer .cruiseform:not(.keen_ui) .od-form-wrapper .ui-datepicker.is-active:not(.is-disabled) .ui-datepicker__display {
+  bottom: 0px;
+}
+
+#odysseus #OVExploreContainer .cruiseform:not(.keen_ui) .od-form-wrapper span.ui-icon.ui-datepicker__dropdown-button {
+  width: 33px;
+  height: 35px;
+  margin-right: 0;
+  padding-top: 6px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+#odysseus #OVExploreContainer .cruiseform .od-form-wrapper {
+  /*element ui calender*/
+}
+
+#odysseus #OVExploreContainer .cruiseform .od-form-wrapper .el-date-editor.el-range-editor.el-input__inner.el-date-editor--daterange {
+  background: transparent;
+  border-radius: 2px;
+  border-color: var(--text-color);
+  width: 100%;
+}
+
+#odysseus #OVExploreContainer .cruiseform .od-form-wrapper .el-date-editor.el-range-editor.el-input__inner.el-date-editor--daterange .el-icon-circle-close {
+  font-family: element-icons;
+}
+
+#odysseus #OVExploreContainer .cruiseform .od-form-wrapper .el-date-editor.el-range-editor.el-input__inner.el-date-editor--daterange .el-icon-circle-close:before {
+  font-family: element-icons;
+  content: "\E607";
+}
+
+#odysseus #OVExploreContainer .cruiseform .od-form-wrapper .el-date-editor input {
+  background: transparent;
+  padding-left: 0px;
+}
+
+#odysseus #OVExploreContainer .cruiseform .od-form-wrapper .el-date-editor .el-range-separator {
+  color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .cruiseform .od-form-wrapper .od-input-wrapper.element_calendar .od-date-picker {
+  border: 0px;
+}
+
+#odysseus .el-picker-panel__body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#odysseus #OVExploreContainer {
+  /*---------------element ui style starts here-------------*/
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .od-input-wrapper input.od-input-box {
+  color: var(--text-color);
+  background: var(--primary-color);
+  border-color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper ::placeholder, #odysseus #OVExploreContainer .element_select .od-form-wrapper :-ms-input-placeholder, #odysseus #OVExploreContainer .element_select .od-form-wrapper ::-ms-input-placeholder {
+  color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .element_select_input_wrapper {
+  line-height: 1px;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select.od-multiselect {
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  border-color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select li {
+  /* all: unset; */
+  border: unset;
+  padding-top: 0;
+  padding-bottom: 0px;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select li.el-select-group__title {
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select li.el-select-dropdown__item {
+  padding-left: 20px;
+  color: var(--secondary-color);
+  background: var(--primary-color);
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select li.el-select-dropdown__item.is-disabled {
+  height: 15px;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select li.el-select-dropdown__item.is-disabled span {
+  margin-top: 7px;
+  border-top: 1px solid;
+  width: 100%;
+  height: 1px;
+  display: block;
+  text-indent: -9999px;
+  border-color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select .el-tag {
+  background-color: var(--text-color);
+  color: var(--primary-color);
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select .el-tag__close.el-icon-close {
+  background-color: var(--secondary-color);
+}
+
+[dir=rtl] #odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select .el-tag__close.el-icon-close {
+  right: 2px;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select .el-input__inner {
+  color: var(--text-color);
+  background: transparent;
+  line-height: 30px;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select .el-input__inner::placeholder {
+  opacity: 1;
+  color: var(--text-color) !important;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select .el-input__inner::-webkit-input-placeholder {
+  opacity: 1;
+  color: var(--text-color) !important;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select .el-input__inner::-ms-input-placeholder {
+  opacity: 1;
+  color: var(--text-color) !important;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select .el-select__tags {
+  padding-left: 30px;
+}
+
+[dir=rtl] #odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select .el-select__tags {
+  padding-right: 30px;
+  padding-left: 0px;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select .el-select__tags input {
+  border: 0px;
+  margin-left: 0px;
+  padding: 0px;
+  background-color: transparent;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select .el-select .el-input .el-select__caret {
+  color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select .el-input {
+  padding-left: 30px;
+  box-sizing: border-box;
+  min-height: 40px;
+}
+
+[dir=rtl] #odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select .el-input {
+  padding-right: 30px;
+  padding-left: 0px;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select .el-input .el-input__inner {
+  border: 0px;
+  padding-left: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+[dir=rtl] #odysseus #OVExploreContainer .element_select .od-form-wrapper .el-select .el-input .el-input__inner {
+  padding-right: 0px;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-date-editor .el-range__icon {
+  display: none;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-date-editor .el-range__close-icon {
+  width: 50px;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-date-editor input {
+  padding-left: 7px;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .el-date-editor.el-range-editor.el-input__inner.el-date-editor--daterange {
+  height: auto;
+  padding: 0px;
+}
+
+[dir=rtl] #odysseus #OVExploreContainer .element_select .el-input__suffix {
+  left: 5px;
+  right: auto;
+}
+
+#odysseus #OVExploreContainer .element_select .el-select .el-input .el-select__caret {
+  color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .el-select-dropdown {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--primary-color);
+  border-color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .el-popper[x-placement^=bottom] .popper__arrow {
+  top: -7px;
+  border-bottom-color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .el-popper[x-placement^=bottom] .popper__arrow:after {
+  border-bottom-color: var(--primary-color);
+}
+
+#odysseus #OVExploreContainer .destination-type-radio label:hover {
+  cursor: pointer;
+}
+
+#odysseus #OVExploreContainer .simple_select .od-form-wrapper {
+  align-items: flex-end;
+}
+
+#odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper.od-advance-input .od-icon {
+  top: 16px;
+  left: 16px;
+}
+
+#odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper label + select, #odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper label {
+  width: 100%;
+  display: block;
+}
+
+#odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper select {
+  padding: 0px;
+  margin: 0px;
+}
+
+@media all and (min-width: 767px) {
+  #odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper select {
+    height: 130px;
+  }
+}
+
+#odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper select option {
+  padding: 5px;
+  font-size: 12px;
+  white-space: normal;
+}
+
+#odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper select option:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+#odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper select option:focus {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper select option[disabled=disabled] {
+  border-top: 1px solid;
+  text-indent: -9999px;
+  padding: 0;
+  height: 1px;
+  line-height: 1px;
+  margin-top: 14px;
+}
+
+#odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper select:-internal-list-box option:checked, #odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper select:-internal-list-box option {
+  background-color: var(--secondary-color) !important;
+  color: var(--text-color) !important;
+}
+
+#odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper label {
+  width: 100%;
+  display: block;
+  padding-left: 31px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media all and (max-width: 767px) {
+  #odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper label {
+    padding-top: 2px !important;
+    max-width: 100% !important;
+  }
+}
+
+[dir=rtl] #odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper label {
+  padding-right: 30px;
+  padding-left: 0px;
+}
+
+#odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper .reset {
+  cursor: pointer;
+  float: right;
+}
+
+[dir='rtl'] #odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper .reset {
+  float: left;
+  margin-left: 5px;
+}
+
+#odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper .reset .reset-icon {
+  position: initial;
+  padding-top: 10px;
+}
+
+#odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper .od-icon {
+  top: 16px;
+  left: 18px;
+  width: auto;
+}
+
+#odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper.v_calendar .od-icon {
+  top: 17px;
+  left: 19px;
+}
+
+#odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-input-wrapper > div {
+  width: 100%;
+}
+
+#odysseus #OVExploreContainer .simple_select .od-form-wrapper .od-select-tour {
+  align-items: center;
+  min-height: 49px;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper {
+  padding-top: 20px;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper [class^="icon-"], #odysseus #OVExploreContainer .v_select .od-form-wrapper [class*=" icon-"] {
+  font-family: 'Material Icons' !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  color: var(--text-color);
+}
+
+@media all and (max-width: 767px) {
+  #odysseus #OVExploreContainer .v_select .od-form-wrapper .od-input-wrapper {
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+  }
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select {
+  padding-top: 0px;
+  margin-bottom: 15px;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .menu {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .menu > .menu__content {
+  max-width: none;
+  top: 0px !important;
+  left: 0px !important;
+  color: var(--primary-color);
+  background-color: var(--text-color);
+  z-index: 41 !important;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .menu > .menu__content .list__tile__action {
+  min-width: 35px;
+  height: auto;
+}
+
+[dir=rtl] #odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .menu > .menu__content .list__tile__action {
+  justify-content: flex-end;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .menu > .menu__content .text--disabled {
+  border-top: 1px solid;
+  border-top-color: var(--primary-color);
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .menu > .menu__content .text--disabled a {
+  display: none;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .menu > .menu__content .list__tile {
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .menu > .menu__content .list__tile:hover {
+  color: var(--primary-color);
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .menu > .menu__content .list__tile__content {
+  font-size: 12px;
+  height: auto;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .menu > .menu__content [class*=" icon-"] {
+  color: var(--primary-color);
+  line-height: 1.2em;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .menu > .menu__content .card {
+  box-shadow: none;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select.input-group--dirty .menu > .menu__content {
+  top: 0px !important;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .input-group__input {
+  position: relative;
+  min-height: 42px;
+  height: auto;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .input-group__input input {
+  background-color: transparent;
+  border: 0px;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .input-group__input .input-group__selections {
+  padding-left: 40px;
+  padding-bottom: 5px;
+}
+
+[dir=rtl] #odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .input-group__input .input-group__selections {
+  padding-left: 0px;
+  padding-right: 40px;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .input-group__input:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0px;
+  background-color: var(--text-color);
+  z-index: 1;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  left: 0px;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .checkbox menu > .menu__content [class*=" icon-"] {
+  line-height: 1.2em;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .checkbox .input-group__input:after {
+  display: none;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .input-group__details {
+  min-height: 1px;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .input-group__details:after {
+  top: -2px;
+  background-color: var(--secondary-color);
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select.input-group label {
+  height: 42px;
+  top: 4px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 32px;
+  font-size: 12px;
+  line-height: 40px;
+}
+
+[dir=rtl] #odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select.input-group label {
+  padding-left: 0px;
+  padding-right: 32px;
+  text-align: right;
+  right: 0px;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .chip--select-multi {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  margin-bottom: 1px;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .chip--select-multi .chip__content {
+  height: auto;
+  white-space: normal;
+  padding-top: 6px;
+  padding-bottom: 5px;
+}
+
+[dir=rtl] #odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .chip--select-multi .chip__content {
+  padding-left: 4px;
+  padding-right: 12px;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--select .chip--select-multi .chip__content .chip__close {
+  margin: 0 7px 0 7px;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--text-field:not(.input-group--single-line).input-group--focused:not(.input-group--textarea) label, #odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--text-field:not(.input-group--single-line).input-group--placeholder:not(.input-group--textarea) label {
+  transform: translateY(-15px) scale(0.95);
+  line-height: 1em;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--text-field.input-group--dirty.input-group--select label, #odysseus #OVExploreContainer .v_select .od-form-wrapper .input-group--text-field.input-group--dirty:not(.input-group--textarea) label {
+  transform: translateY(-15px) scale(0.95);
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .od-input-wrapper .od-date-picker {
+  border: 0px;
+  border-bottom: 2px solid;
+  margin-bottom: 18px;
+}
+
+#odysseus #OVExploreContainer .v_select .od-form-wrapper .od-input-wrapper .od-date-picker input {
+  padding-top: 16px;
+  padding-bottom: 7px;
+}
+
+#odysseus #OVExploreContainer .v_select .input-group--select.input-group--focused .input-group--select__autocomplete, #odysseus #OVExploreContainer .v_select .input-group--select:not(.input-group--dirty) .input-group--select__autocomplete {
+  height: 42px;
+}
+
+#odysseus #OVExploreContainer .v_select .input-group--text-field.input-group--dirty.input-group--select label, #odysseus #OVExploreContainer .v_select .input-group--text-field.input-group--dirty:not(.input-group--textarea) label {
+  line-height: 1em;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper input.od-input-box {
+  color: var(--text-color);
+  background: var(--primary-color);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  padding: 7px 30px;
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper input.od-input-box::placeholder {
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper .od-icon {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-icon {
+  background-image: none;
+  line-height: 18px;
+  height: 18px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-icon svg {
+  fill: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select__dropdown {
+  background-color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select__dropdown .ui-select__options {
+  background-color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select-option {
+  display: flex;
+  padding: 6px 12px;
+  font-size: 16px;
+  background: none;
+  color: var(--primary-color);
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-keen-ui-close-btn {
+  background-color: transparent;
+  position: absolute;
+  right: 5px;
+  top: 1px;
+  z-index: 40;
+  width: 30px;
+  height: 30px;
+  display: block;
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-keen-ui-close-btn span {
+  display: none;
+}
+
+[dir=rtl] #odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-keen-ui-close-btn {
+  left: 5px;
+  right: auto;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-keen-ui-close-btn:before, #odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-keen-ui-close-btn:after {
+  content: '';
+  width: 2px;
+  height: 15px;
+  background-color: var(--text-color);
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-keen-ui-close-btn:before {
+  right: 14px;
+  transform: rotate(135deg);
+  top: 10px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-keen-ui-close-btn:after {
+  right: 14px;
+  top: 10px;
+  transform: rotate(45deg);
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-keen-ui-close-btn a {
+  text-indent: -9999px;
+  display: block;
+  height: 100%;
+  width: 30px;
+  right: 0px;
+  top: 0px;
+  z-index: 40;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select-option.is-selected, #odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select-option.is-selected .ui-select-option__checkbox {
+  color: var(--secondary-color);
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select .ui-select__display {
+  padding-left: 30px;
+  border-color: var(--text-color);
+  line-height: 17px;
+  padding-top: 4px;
+  box-sizing: border-box;
+  padding-bottom: 4px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+[dir='rtl'] #odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select .ui-select__display {
+  padding-left: 0px;
+  padding-right: 30px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select.has-label .ui-select__dropdown-button {
+  color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select__display-value {
+  color: var(--text-color);
+  font-size: 16px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select.has-floating-label .ui-select__label-text {
+  padding-left: 30px;
+  color: var(--text-color);
+}
+
+[dir='rtl'] #odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select.has-floating-label .ui-select__label-text {
+  padding-left: 0px;
+  padding-right: 30px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select__display {
+  border-color: var(--text-color);
+}
+
+[dir='rtl'] #odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select.has-floating-label .ui-select__label-text.is-inline {
+  -webkit-transform: translateY(23px) scale(1.1) translateX(-23px);
+  transform: translateY(23px) scale(1.1) translateX(-23px);
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select__search-input {
+  padding-left: 40px;
+  padding-right: 12px;
+  padding-top: 10px;
+  color: var(--primary-color);
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select__search-input::-webkit-input-placeholder {
+  color: var(--primary-color);
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select__search-input::-moz-placeholder {
+  color: var(--primary-color);
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select__search-input:-ms-input-placeholder {
+  color: var(--primary-color);
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select__search-input:-moz-placeholder {
+  color: var(--primary-color);
+}
+
+[dir='rtl'] #odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select__search-input {
+  padding: 0 12px;
+  padding-left: 12px;
+  padding-right: 40px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select__search-icon {
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+
+[dir='rtl'] #odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select__search-icon {
+  right: 12px;
+  left: auto;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select__search-icon svg {
+  fill: var(--secondary-color);
+}
+
+[dir='rtl'] #odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select-option__checkbox {
+  margin-right: auto;
+  margin-left: 0px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select__search-input {
+  box-sizing: border-box;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select.is-active:not(.is-disabled) .ui-select__display {
+  border-bottom: 1px solid;
+  border-color: var(--secondary-color);
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-progress-circular {
+  position: absolute;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-progress-circular--color-primary .ui-progress-circular__determinate-path, #odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-progress-circular--color-primary .ui-progress-circular__indeterminate-path {
+  stroke: var(--secondary-color);
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper:not(.keen_calendar) .od-date-picker {
+  border: 0px;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper.keen_calendar .od-date-picker {
+  border: 0px;
+  margin-bottom: 0px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper.keen_calendar .od-date-picker .ui-datepicker__display {
+  padding-left: 30px;
+  font-size: 12px;
+  border-color: var(--text-color);
+  line-height: 17px;
+  padding-top: 4px;
+  box-sizing: border-box;
+  padding-bottom: 4px;
+  height: auto;
+  color: var(--text-color);
+  border-bottom: 1px solid;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper.keen_calendar .od-date-picker .ui-datepicker__display-value.is-placeholder {
+  font-size: 12px;
+  color: var(--text-color);
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper.keen_calendar .od-date-picker span.date-picker-close-btn {
+  height: 21px;
+  right: 0px;
+  background: var(--primary-color);
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select-option__checkbox .ui-icon svg {
+  height: 18px;
+  width: 18px;
+  fill: var(--primary-color);
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper .od-date-picker span.date-picker-close-btn {
+  top: 0px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper .od-date-picker span.date-picker-close-btn:before, #odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper .od-date-picker span.date-picker-close-btn:after {
+  top: 5px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper.element_calendar .od-date-picker {
+  margin-bottom: 16px;
+  padding-bottom: 0px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper.element_calendar .od-date-picker .el-date-editor.el-range-editor.el-input__inner.el-date-editor--daterange {
+  border: 0px;
+  padding: 0px;
+  height: auto;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper.element_calendar .od-date-picker .el-date-editor .el-range__close-icon {
+  line-height: 27px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper.element_calendar .od-date-picker input {
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .el-date-editor .el-range-separator {
+  line-height: 27px;
+  padding-bottom: 2px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .el-date-editor input {
+  line-height: 25px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .el-date-editor .el-range__icon {
+  line-height: 27px;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .od-icon {
+  top: 18px;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .od-input-wrapper input.el-input__inner {
+  line-height: 30px;
+  height: auto;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .od-input-wrapper input.od-input-box:focus {
+  outline: none;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .od-input-wrapper.od-text-input {
+  margin-bottom: 5px;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .od-input-wrapper .od-date-picker {
+  margin-bottom: 0px;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .od-input-wrapper .od-date-picker input {
+  padding-bottom: 11px;
+  padding-top: 13px;
+}
+
+#odysseus #OVExploreContainer .element_select .od-form-wrapper .od-input-wrapper .od-date-picker input:focus {
+  outline: none;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-input-wrapper .od-date-picker input::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-input-wrapper .od-date-picker input::-moz-placeholder {
+  font-size: 12px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-input-wrapper .od-date-picker input:-ms-input-placeholder {
+  font-size: 12px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-input-wrapper .od-date-picker input:-moz-placeholder {
+  font-size: 12px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper {
+  align-items: flex-end;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper .od-icon {
+  top: 8px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-input-wrapper .od-date-picker input {
+  font-size: 12px;
+  padding-bottom: 3px;
+  padding-top: 0;
+  line-height: 22px;
+  padding-left: 30px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper .od-date-picker {
+  padding-bottom: 0px;
+  margin-bottom: 12px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper.v_calendar .od-icon {
+  top: 8px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .ui-select__display-value {
+  font-size: 12px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper input::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper input::-moz-placeholder {
+  font-size: 12px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper input:-ms-input-placeholder {
+  font-size: 12px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper input:-moz-placeholder {
+  font-size: 12px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper input:focus {
+  outline: none;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper.od-text-input .od-icon {
+  top: 11px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper input.od-input-box {
+  border: 0px;
+  padding: 7px 10px 7px 30px;
+  border-bottom: 1px solid;
+  border-bottom-color: var(--text-color);
+  margin-bottom: 12px;
+}
+
+#odysseus #OVExploreContainer .keen_ui .od-form-wrapper .od-input-wrapper .ui-select-option {
+  font-size: 12px;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__tags {
+  font-size: 12px;
+}
+
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__tags .multiselect__tag {
+  margin-bottom: 2px;
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  #odysseus #OVExploreContainer .od-tab-form-wrapper .element_select .od-form-wrapper .od-input-wrapper {
+    flex-basis: 0;
+  }
+}
+
+#odysseus #OVExploreContainer .od-button-wrapper {
+  width: 50px;
+  margin: 0px;
+  box-sizing: border-box;
+  float: none;
+  padding: 5px;
+}
+
+#odysseus #OVExploreContainer .od-button-wrapper .od-adv-search-btn .od-adv-search-icon {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#odysseus #OVExploreContainer .od-button-wrapper .od-adv-search-btn .od-adv-search-icon span {
+  height: 15px;
+}
+
+#odysseus #OVExploreContainer .od-button-wrapper .od-adv-search-btn .od-adv-search-icon span svg {
+  fill: #fff;
+  color: #fff;
+  width: 15px;
+  height: 15px;
+}

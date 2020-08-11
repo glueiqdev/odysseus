@@ -1,0 +1,63 @@
+<div id="odysseus">
+  <div :style="themeStyleColor" class="od-tool-main-wrapper" id="OVExploreContainer">
+    <div v-html="svgIcons"></div>
+    <div class="od-main-wrapper" v-show="showTemplate">
+      <div v-if="enableTab" class="tabs-main-wrapper">
+        <div class="tab-item" v-if="site_settings.productType.includes('cruise')"
+             @click="currentProduct('cruise')"
+             :class="{ product_active: isCruiseActive }">
+          <div class="tab-icon"> <svg class="icon od-icon-cruise" style="width: 30px; height: 30px;"><use xlink:href="#od-icon-cruise"></use></svg></div>
+
+
+          <div class="tab-title">
+            <span class="nav-link">{{ labels['Lbl_Cruise'] ? labels['Lbl_Cruise'] : 'Loading...' }}</span>
+          </div>
+        </div>
+        <div class="tab-item" v-if="site_settings.productType.includes('air')"
+             @click="currentProduct('air')"
+             :class="{ product_active: isAirActive }">
+          <div class="tab-icon"><svg class="icon od-icon-airplane-flight" style="width: 30px; height: 30px;"><use xlink:href="#od-icon-airplane-flight"></use></svg></div>
+
+          <div class="tab-title">
+            <span class="nav-link">{{ labels['Lbl_Flight'] ? labels['Lbl_Flight'] : 'Loading...' }}</span>
+          </div>
+        </div>
+      </div>
+      <div id="cruise" v-if="isCruiseActive" class="od-tab-form-wrapper">
+        <template v-if="site_settings.isFastSellEnable">
+          <keep-alive>
+            <cruise-fast-sell-form :site_preference="site_preference"
+                                     :site_settings="site_settings"
+                                     :cruise_filters="cruise_filters"
+                                     :cruise_widget_config="cruise_widget_config"
+                                     :labels="labels"
+                                     @load_completed="showTemplate = true">
+            </cruise-fast-sell-form>
+          </keep-alive>
+        </template>
+        <template v-else>
+          <keep-alive>
+            <cruise-form :site_preference="site_preference"
+                         :site_settings="site_settings"
+                         :cruise_filters="cruise_filters"
+                         :cruise_widget_config="cruise_widget_config"
+                         :labels="labels"
+                         @load_completed="showTemplate = true">
+            </cruise-form>
+          </keep-alive>
+        </template>
+      </div>
+      <div id="air" v-if="isAirActive" class="od-tab-form-wrapper">
+        <keep-alive>
+          <air-form :site_preference="site_preference"
+                    :site_settings="site_settings"
+                    :air_widget_settings="air_widget_settings"
+                    :labels="labels"
+                    @load_completed="showTemplate = true">
+          </air-form>
+        </keep-alive>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,374 @@
+<div class="cruiseform" :class="cruise_widget_config.widgetStyle">
+
+  <link :href="cruiseLayoutCSS" rel="stylesheet" v-if="cruiseLayoutCSS" />
+
+  <template v-for="style in cruiseCustomCSS" v-if="cruiseCustomCSS">
+
+    <link :href="style" rel="stylesheet" />
+
+  </template>
+
+
+
+  <div
+
+    class="destination-type-radio"
+
+    v-if="site_preference.showDestinationTypeFilter"
+
+  >
+
+    <label v-for="destFilter in destinationTypeFilters">
+
+      <input
+
+        type="radio"
+
+        v-model="destinationType"
+
+        :name="'destinationType_' + globalIndex"
+
+        :value="destFilter.value"
+
+      />
+
+      <span>{{
+
+        labels[destFilter.label] ? labels[destFilter.label] : 'Loading...'
+
+      }}</span>
+
+    </label>
+
+  </div>
+
+
+
+  <div class="od-form-wrapper">
+	
+	  <div class="searchformHeadline">Find a Cruise <span>Advanced Search</span></div>
+	
+      <div class="od-input-main-wrapper">
+
+
+
+          <div :class="['od-input-wrapper', 'od-one-third-width', searchField.id, searchField.isComponent ? searchField.widget.style : 'od-text-input']"
+
+               v-for="searchField in cruiseSearchFieldsWithoutCheckboxes"
+
+               v-show="isSearchFieldVisible(searchField)">
+
+              <div>
+
+                  <!--<div class="od-icon">
+
+                      <svg :class="'icon ' + searchField.svgKey">
+
+                          <use :xlink:href="'#' + searchField.svgKey"></use>
+
+                      </svg>
+
+                  </div>-->
+
+                  <component v-if="searchField.isComponent"
+
+                             :id="searchField.id"
+
+                             :options="searchField.options"
+
+                             :mode="searchField.mode"
+
+                             :format="site_preference.dateFormat"
+
+                             :max_date="searchField.maxDate ? eval(searchField.maxDate) : null"
+
+                             :min_date="searchField.minDate ? eval(searchField.minDate) : null"
+
+                             :selected_value="eval(searchField.model)"
+
+                             :placeholder="isLoading ? 'Loading...' : placeholderLabels[searchField.id]"
+
+                             :isloading="isLoading"
+
+                             :track_by="searchField.trackBy"
+
+                             :labels="labels"
+
+                             :select_widget="searchField.widget"
+
+                             :is="searchField.widget.style"
+
+                             :theme_color="site_settings.themeColor"
+
+                             @change_selected_value="changeSelectedSearchToFilter" />
+
+
+
+                  <!-- <template v-else-if="searchField.isRadioButton">
+
+              <label v-for="option in searchField.options">
+
+                <input
+
+                  type="radio"
+
+                  :name="searchField.name + '_' + globalIndex"
+
+                  :value="option.value"
+
+                  :checked="eval(searchField.model) == option.value"
+
+                  @change="e => searchFieldValueChanged(searchField.model, e.target.value, searchField.changeCallback)"
+
+                />
+
+                <span>{{
+
+                  labels[option.label] ? labels[option.label] : 'Loading...'
+
+                }}</span>
+
+              </label>
+
+            </template> -->
+
+
+
+                  <input v-else
+
+                         :id="searchField.id + '_' + globalIndex"
+
+                         type="text"
+
+                         class="od-input-box"
+
+                         :disabled="isLoading"
+
+                         :placeholder="isLoading ? 'Loading...' : placeholderLabels[searchField.id]"
+
+                         :checked="eval(searchField.model)"
+
+                         @blur="function(e) { changeSelectedSearchToFilter(e.target.value, searchField.id, searchField.model, true) }" />
+
+              </div>
+
+          </div>
+
+      </div>
+
+      <div class="od-btn-main-wrapper">
+
+          <div class="btn-wrap od-button-wrapper od-search-button">
+
+              <button type="button"
+
+                      class="od-btn btn-search"
+
+                      id="SearchBTN"
+
+                      @click="submitSearch()">
+
+                 
+
+                  <span v-if="labels['Lbl_Search'] && labels['Lbl_Cruise']">
+
+                     Find a Cruise
+
+                  </span>
+
+                  <span v-else>
+
+                      Loading...
+
+                  </span>
+
+              </button>
+
+          </div>
+
+
+
+          <div class="od-main-button-wrapper">
+
+             
+
+              <template v-if="showAdvanceSearchButton">
+
+                  <div class="od-button-wrapper">
+
+                      <a id="SearchBTN"
+
+                         @click="isAdvanceSearch=!isAdvanceSearch"
+
+                         class="od-adv-search-btn">
+
+                          <span v-show="isAdvanceSearch"
+
+                                class="od-adv-search-icon"
+
+                                :title="labels['Lbl_LessOptions'] ? labels['Lbl_LessOptions'] : 'Loading...'">
+
+                              <span>
+
+                                  <svg class="icon od-icon-braille-six-dots-(1)">
+
+                                      <use xlink:href="#od-icon-braille-six-dots-(1)"></use>
+
+                                  </svg>
+
+                              </span>
+
+                          </span>
+
+                          <span v-show="!isAdvanceSearch"
+
+                                class="od-adv-search-icon"
+
+                                :title="labels['Lbl_MoreOptions'] ? labels['Lbl_MoreOptions'] : 'Loading...'">
+
+                              <span>
+
+                                  <svg class="icon od-icon-braille-six-dots">
+
+                                      <use xlink:href="#od-icon-braille-six-dots"></use>
+
+                                  </svg>
+
+                              </span>
+
+                          </span>
+
+                      </a>
+
+                  </div>
+
+              </template>
+
+
+
+
+
+
+
+          </div>
+
+      </div>
+
+          <div class="od-checkbox-main-wrapper">
+
+              <div :class="['od-checkbox-wrapper', searchField.id]"
+
+                   v-for="searchField in cruiseSearchOnlyCheckboxFields"
+
+                   v-show="isSearchFieldVisible(searchField)">
+
+
+
+                  <template v-if="searchField.isMultiCheckbox">
+
+                      <div :class="['od-checkbox', option.id]"
+
+                           v-for="(option, index) of eval(searchField.options)"
+
+                           :key="option.name">
+
+                          <input :id="option.id + '_' + index + '_' + globalIndex"
+
+                                 type="checkbox"
+
+                                 class="od-checkbox-input"
+
+                                 :checked="option.checked"
+
+                                 :value="option.name"
+
+                                 :disabled="searchField.disableOnLoading ? isLoading : false"
+
+                                 @change="function(e) { option.checked = e.target.checked; searchFieldValueChanged(null, null, searchField.changeCallback, option) }" />
+
+                          <label :for="option.id + '_' + index + '_' + globalIndex"
+
+                                 class="od-checkbox-label">
+
+                              {{ option.name }}
+
+                          </label>
+
+                      </div>
+
+                  </template>
+
+
+
+                  <div class="od-checkbox" v-else>
+
+                      <input :id="searchField.id + '_' + globalIndex"
+
+                             type="checkbox"
+
+                             class="od-checkbox-input"
+
+                             :disabled="searchField.disableOnLoading ? isLoading : false"
+
+                             :checked="eval(searchField.model)"
+
+                             @change="function(e) { searchFieldValueChanged(searchField.model, e.target.checked, searchField.changeCallback) }" />
+
+                      <label :for="searchField.id + '_' + globalIndex"
+
+                             class="od-checkbox-label">
+
+                          {{
+
+              placeholderLabels[searchField.id]
+
+                ? placeholderLabels[searchField.id]
+
+                : 'Loading...'
+
+                          }}
+
+                      </label>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+
+
+          <!--<div class="itineraries select-wrap half mb od-results-wrapper">
+
+              <span class="itineraties-found  od-result-text">
+
+                  <span class="number">
+
+                      {{ totalItineraries }}
+
+                  </span>
+
+                  <span>
+
+                      {{
+
+            labels['Lbl_SailingsFound']
+
+              ? labels['Lbl_SailingsFound']
+
+              : 'Loading...'
+
+                      }}
+
+                  </span>
+
+              </span>
+
+          </div>-->
+
+     
+
+  </div>
+
+</div>
+
