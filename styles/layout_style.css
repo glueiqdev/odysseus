@@ -1,8 +1,8 @@
 .od-form-wrapper {
-	width: 860px;
+	width: 940px;
 	max-width: 100%;
 	margin: 20px auto 10px;
-	font-family: Segoe UI,Helvetica,Arial,sans-serif;
+	
 }
 .od-form-wrapper .searchformHeadline {
 	font-size: 24px;
@@ -48,7 +48,7 @@
 .multiselect__input, .multiselect__single,
 #odysseus #OVExploreContainer .od-form-wrapper .multiselect__tags .multiselect__placeholder {
 	color: #000 !important;
-	font-family: Segoe UI,Helvetica,Arial,sans-serif;
+	
 }
 
 .multiselect__select:before {
@@ -84,7 +84,7 @@
     width: 150px;
     padding: .625rem 1rem;
     margin: 0;
-    font-family: Segoe UI,Helvetica,Arial,sans-serif;
+   
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
