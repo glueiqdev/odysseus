@@ -1,5 +1,5 @@
 .find-a-cruise-h3{
-	margin-top:0;
+	margin-top:5px;
 }
 
 .od-form-wrapper {
@@ -81,8 +81,8 @@
 }
 
 #SearchBTN {
-    background: #21326c;
-    border: 1px solid #21326c;
+    background: #1d336d;
+    
     font-size: 16px;
     font-weight: 400;
     width: 150px;
