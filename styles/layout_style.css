@@ -29,7 +29,7 @@
 
 .multiselect {
 	background: #fff;
-    border-bottom: 1px solid #21326C;
+    border-bottom: 1px solid rgba(1, 44, 92, 0.37);
     padding-left: 0;
     font-size: 1rem;
     margin-right: 15px;
@@ -46,12 +46,13 @@
 
 .multiselect__input, .multiselect__single,
 #odysseus #OVExploreContainer .od-form-wrapper .multiselect__tags .multiselect__placeholder {
-	color: #000 !important;
+	color: #022658 !important;
+	font-size:20px;
 	
 }
 
 .multiselect__select:before {
-	border-color: black transparent transparent !important;
+	border-color: rgba(1, 44, 92, 0.37) transparent transparent !important;
 }
 
 .multiselect__tag {
