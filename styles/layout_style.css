@@ -47,7 +47,7 @@
 
 .footer-search .multiselect{
 	background: transparent;
-	 border-bottom:#fff;
+	 border-bottom:1px solid #fff;
 }
 
 #odysseus #OVExploreContainer .od-form-wrapper .multiselect__tags {
