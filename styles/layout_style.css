@@ -2,6 +2,10 @@
 	margin-top:5px;
 }
 
+.footer-search .find-a-cruise-h3{
+	color:#838faf;
+}
+
 .od-form-wrapper {
 	max-width: 100%;
 	margin: 0;
@@ -41,6 +45,10 @@
    
 }
 
+.footer-search .multiselect{
+	background: transparent;
+}
+
 #odysseus #OVExploreContainer .od-form-wrapper .multiselect__tags {
 	background: none !important;
 	border: none !important;
@@ -55,9 +63,20 @@
 	
 }
 
+
+.footer-search .multiselect__input, .multiselect__single,
+#odysseus #OVExploreContainer .od-form-wrapper .multiselect__tags .multiselect__placeholder {
+	color:#fff !important;
+}
+
 .multiselect__select:before {
 	border-color: rgba(1, 44, 92, 0.37) transparent transparent !important;
 }
+
+.footer-search .multiselect__select:before {
+	border-color: #fff !important;
+}
+
 
 .multiselect__tag {
 	background: #21326C !important;
@@ -94,6 +113,11 @@
     border-radius: 4px;
     color: #fff;
     cursor: pointer;
+}
+
+.footer-search #SearchBTN {
+	background: #fff;
+	color:#012c5c;
 }
 
 
