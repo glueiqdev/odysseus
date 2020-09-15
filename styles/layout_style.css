@@ -124,7 +124,8 @@
 
 @media (max-width: 991px) {
 	.od-form-wrapper {
-		width: 360px;
+		width: 100%;
+		padding:15px;
 	}
 	.od-input-main-wrapper {
 		display: block;
@@ -137,5 +138,12 @@
 	}
 	.od-input-wrapper.od-one-third-width {
 		margin: 20px 0;
+		width:100%
+	}
+	#odysseus #OVExploreContainer .od-button-wrapper{
+		text-align:center;
+	}
+	.column-2.w-col.w-col-6{
+	padding-left:0;
 	}
 }
