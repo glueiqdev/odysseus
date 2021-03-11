@@ -151,3 +151,11 @@
 		margin-left:5px;
 	}
 }
+
+@media (max-width: 767px) {
+	
+	.find-a-cruise-h3{
+		
+		margin-left:0px;
+	}
+}
